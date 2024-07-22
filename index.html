@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Interactive Page with 3D Model</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5.5.2/dist/iro.min.js"></script>
+</head>
+<body>
+    <h1 class="datsun-heading">Sample T Shirt</h1>
+    
+    
+  
+
+    <div class="container">
+        <div class="content">
+            <model-viewer id="myModel" src="./oversized_t-shirt/scene.gltf" alt="A 3D model" auto-rotate camera-controls camera-orbit="0deg 90deg 2.5m" interaction-prompt="none" scale="1.5 1.5 1.5"></model-viewer>
+        </div>
+       
+    </div>
+
+    <div class="contnets-below-model container">
+        <div id="colorPickerContainer"></div>
+        <form>
+            <input type="file" id="imageUpload" accept="image/*"/>
+        </form>
+        
+    </div>
+
+    <script src="./function.js"></script>
+</body>
+</html>
